@@ -7,7 +7,7 @@
     <meta http-equiv="content-type" content="text/html; charset=ISO-8895-2" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="./bootstrap/dist/css/bootstrap.min.css"
+    <link rel="stylesheet" href="assets/bootstrap/dist/css/bootstrap.min.css"
         integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     <link rel="shortcut icon" type="image/png" href="images/morado-ico-60x60.png" />

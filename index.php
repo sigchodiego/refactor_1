@@ -1,48 +1,40 @@
 <?php include('header.php'); ?>
-
 <main class="row allinsidehome" style="position: relative;">
-
     <section class="bienvenida">
         <div class="bienvenida__header">
-            <img class="bienvenida__header logo" src="assets/images/logo-MEJ-w.svg" alt="Logo empresa">
-            <img class="bienvenida__header logo" src="assets/images/ico-mis-facturas.svg" alt="Logo campaña">
+            <img class="logo" src="assets/images/logo-MEJ-w.svg" alt="Logo empresa">
+            <img class="logo" src="assets/images/ico-mis-facturas.svg" alt="Logo campaña">
         </div>
-        <div class="bienvenida__mensaje">¡ÚLTIMO DÍA PARA REGISTRAR TUS FACTURAS!
-        </div>
-        <div class="bienvenida__titulo">Acumula $50 en facturas y participa por un<span
-                style="display: block; font-weight: 600;">Espectacular NISSAN X-TRAIL E-POWER (con propulsión 100%
-                eléctrica) + $10.000 en efectivo</span></div>
-        <div style="width: 100%;display: inline-block;text-align: center;">
-            <div class="btndivsoyn_home">
-                <div class="label_exp_home">Soy nuev@ aquí</div><br />
-                <a href="registro.php" style="text-decoration: none;">
-                    <div class="reg_fact_home">Crea una cuenta</div>
-                </a>
+        <p hidden class="bienvenida__mensaje">¡ÚLTIMO DÍA PARA REGISTRAR TUS FACTURAS!</p>
+        <h2 class="bienvenida__titulo">
+            Acumula $50 en facturas y participa por un <span class="bienvenida__titulo--bold">Espectacular NISSAN
+                X-TRAIL E-POWER (con propulsión 100%
+                eléctrica) + $10.000 en efectivo</span>
+        </h2>
+        <div class="bienvenida__actions">
+            <div class="bienvenida__block">
+                <span class="label">Soy nuev@ aquí</span>
+                <a href="registro.php" class="button button--color1">Crea una cuenta</a>
             </div>
-            <div class="btndivyaten_home">
-                <div class="label_exp_home">Ya tengo un usuario</div><br />
-                <a href="login.php" style="text-decoration: none;">
-                    <div class="reg_fact_home">Registra tus facturas</div>
-                </a>
+            <div class="bienvenida__block">
+                <span class="label">Ya tengo un usuario</span>
+                <a href="login.php" class="button button--color1">Registra tus facturas</a>
             </div>
+            </a>
         </div>
-        <div style="width: 100%;display: inline-block;text-align: center;">
-            <ul class="links_ul_home">
-                <li class="act_vid">¿Cómo funciona?</li>
-                <li class="mpbtnsh li_inter_links_ul_home">Mecánica & premios</li>
-                <li class="ver_bases_legales">Términos y condiciones</li>
-            </ul>
         </div>
-        <div style="width: 100%;display: inline-block;text-align: center;">
-            <ul class="links_ul_home_1">
-                <li class="ver_form_cont">¿Dudas?</li>
-                <li class="ver_form_cont" style="text-decoration: underline;">Escríbenos</li>
-            </ul>
-        </div>
+        <ul class="bienvenida_links">
+            <li class="act_vid link-item">¿Cómo funciona?</li>
+            <li class="mpbtnsh li_inter_links_ul_home link-item">Mecánica & premios</li>
+            <li class="ver_bases_legales link-item">Términos y condiciones</li>
+        </ul>
+
+        <ul class="bienvenida_links">
+            <li class="ver_form_cont link-item">¿Dudas?</li>
+            <li class="ver_form_cont link-item" style="text-decoration: underline;">Escríbenos</li>
+        </ul>
+
     </section>
-
-
-
     <div class="mpdiv">
         <img class="mpdivimg" src="images/mp_canje1.jpg" style="width: 100%;">
         <div class="cerrar_mp">X</div>
@@ -63,75 +55,61 @@
                 style="width: 100%;"></a>
         <div class="cerrar_bases_legs">X</div>
     </div>
-    <div class="form_cont">
-        <div class="form_cont_pres">Compártenos tus inquietudes. Con gusto las revisaremos y<br /> te responderemos
-            lo antes posible.</div>
-        <div class="divreg100x50" style="width: 50%;float: left;padding: 0 25px;">
-            <label>Nombre</label>
-            <input type="text" name="nombre_form_cont" id="nombre_form_cont" placeholder="Nombre">
-            <div class="alert alert-warning alert-styled-left alert-dismissible alert-arrow-left mt-1"
-                id="error_nombre_form_cont" style="display: none;">
-                <span class="font-weight-semibold">Rellena este campo.</span>
+    <div class="form_cont popup">
+        <h3 class="title">
+            Compártenos tus inquietudes. Con gusto las revisaremos y<br /> te responderemos
+            lo antes posible.
+        </h3>
+        <div class="popup_row">
+            <div class="popup_col">
+                <label class="popup_label">Nombre</label>
+                <input class="popup_input" type="text" name="nombre_form_cont" id="nombre_form_cont"
+                    placeholder="Nombre">
+                <span class="alert alert-warning" id="error_nombre_form_cont" style="display: none;">
+                    Rellena este campo.
+                </span>
+            </div>
+
+            <div class="popup_col">
+                <label class="popup_label">Asunto</label>
+                <input class="popup_input" type="text" name="asunto_form_cont" id="asunto_form_cont"
+                    placeholder="Asunto">
+                <span class="alert alert-warning" id="error_asunto_form_cont" style="display: none;">
+                    Rellena este campo.
+                </span>
             </div>
         </div>
 
-        <div class="divreg100x50" style="width: 50%;float: left;padding: 0 25px;">
-            <label>Asunto</label>
-            <input type="text" name="asunto_form_cont" id="asunto_form_cont" placeholder="Asunto">
-            <div class="alert alert-warning alert-styled-left alert-dismissible alert-arrow-left mt-1"
-                id="error_asunto_form_cont" style="display: none;">
-                <span class="font-weight-semibold">Rellena este campo.</span>
-            </div>
+        <div class="popup_row">
+            <label class="popup_label">Correo</label>
+            <input class="popup_input" type="emial" name="email_form_cont" id="email_form_cont"
+                placeholder="Correo electrónico" style="max-width: 100%;">
+            <span class="alert alert-warning" id="error_email_form_cont" style="display: none;">
+                Rellena este campo.
+            </span>
+            <span class="alert alert-warning" id="error_email_form_cont_format" style="display: none;">
+                Escribe un correo válido.
+            </span>
         </div>
 
-        <div class="divreg100x50" style="width: 100%;float: left;padding: 0 25px;">
-            <label>Correo</label>
-            <input type="emial" name="email_form_cont" id="email_form_cont" placeholder="Correo electrónico"
-                style="max-width: 100%;">
-            <div class="alert alert-warning alert-styled-left alert-dismissible alert-arrow-left mt-1"
-                id="error_email_form_cont" style="display: none;">
-                <span class="font-weight-semibold">Rellena este campo.</span>
-            </div>
-            <div class="alert alert-warning alert-styled-left alert-dismissible alert-arrow-left mt-1"
-                id="error_email_form_cont_format" style="display: none;">
-                <span class="font-weight-semibold">Escribe un correo válido.</span>
-            </div>
+        <div class="popup_row">
+            <label class="popup_label">Detalle</label>
+            <textarea class="popup_input" row="3" name="detalle_form_cont" id="detalle_form_cont"
+                placeholder="Detalle"></textarea>
+            <span class="alert alert-warning" id="error_detalle_form_cont" style="display: none;">
+                Rellena este campo.
+            </span>
         </div>
 
-        <div class="divreg100x50" style="width: 100%;float: left;padding: 0 25px;">
-            <label>Detalle</label>
-            <textarea row="3" name="detalle_form_cont" id="detalle_form_cont" placeholder="Detalle"
-                style="max-width: 100%;"></textarea>
-            <div class="alert alert-warning alert-styled-left alert-dismissible alert-arrow-left mt-1"
-                id="error_detalle_form_cont" style="display: none;">
-                <span class="font-weight-semibold">Rellena este campo.</span>
-            </div>
-        </div>
-        <div style="text-align: center;">
-            <button class="btnmi" id="submit_form_cont">Enviar</button>
-        </div>
-        <div class="ejecutar_send_mail_form_cont"
-            style="width: 100%;display: inline-block;font-family: 'MPR';color: white;margin-top: 25px;"></div>
+        <button class="button button--color1" id="submit_form_cont">Enviar</button>
+        <br>
+        <div class="ejecutar_send_mail_form_cont alert alert-success" style="">Gracias, tu
+            mensaje ha sido enviado. Te contactaremos a la brevedad.</div>
         <div class="cerrar_form_cont">X</div>
     </div>
-    <div class="twologoshome">
-        <img class="logomallhome" src="images/logo-MEJ-w.svg" alt="Img1">
-        <img class="logomisfacturashome" src="images/ico-mis-facturas.svg" alt="Img1">
-    </div>
 
-    <div class="over_footer"><?php include "footer.php" ?></div>
+    <script src="assets/js/index.js"></script>
+    <?php include_once "aviso-campana-inactiva.php" ?>
+    <?php include_once "footer.php" ?>
+
 </main>
-<?php include "aviso-campana-inactiva.php" ?>
-</body>
-<style>
-@media(max-width:560px) {
-    .over_footer {
-        margin-top: 35px;
-    }
-}
-</style>
-<script type="text/javascript">
-
-</script>
-
-</html>

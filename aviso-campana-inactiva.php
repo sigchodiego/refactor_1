@@ -64,9 +64,10 @@ $dataCampaign = array(
     ?>
 
 <div class="cmej-modal-nocampaign showModal">
-    <div class="cmej-modal-nocampaign-body">
-        <p>Estimado usuario</p>
-        <p>El canje de cupones culmin&oacute; el <?php echo dateFormatCampaign($dataCampaign["end"], $dias, $meses); ?>
+    <div class="cmej-modal-nocampaign-body popup">
+        <h3 class="title">Estimado usuario</h3>
+        <p class="text">El canje de cupones culmin&oacute; el
+            <?php echo dateFormatCampaign($dataCampaign["end"], $dias, $meses); ?>
             y el sorteo se realizar&aacute; el
             <?php echo dateFormatCampaign($dataCampaign["raffle"], $dias, $meses); ?>. Para m&aacute;s
             informaci&oacute;n vis&iacute;tanos en:</p>
@@ -98,59 +99,12 @@ $dataCampaign = array(
     opacity: 1;
 }
 
-.cmej-modal-nocampaign-body {
-    max-width: 600px;
-    height: 400px;
-    display: block;
-    margin: auto;
-    background-color: white;
-    color: #000;
-    border-radius: 5px;
-    padding: 30px;
-    padding-top: 60px;
-    position: relative;
-}
 
-.cmej-modal-nocampaign-body p {
-    font-size: 25px;
-    line-height: 1;
-    text-align: center;
-    font-family: MPR
-}
 
 .cmej-modal-nocampaign-body p:first-child {
     font-size: 30px;
     font-weight: bold;
     margin-bottom: 25px;
-}
-
-.cmej-modal-nocampaign-body .social-links {
-    display: flex;
-    flex-direction: column;
-    margin-top: 35px;
-}
-
-.cmej-modal-nocampaign-body .social-links a {
-    font-size: 25px;
-    margin-bottom: 15px;
-    text-align: center;
-    font-family: MPR
-}
-
-span.cmej-modal-close-btn {
-    background-color: red;
-    width: 45px;
-    height: 45px;
-    display: flex;
-    position: absolute;
-    right: -15px;
-    top: -15px;
-    font-size: 25px;
-    color: white;
-    border-radius: 50%;
-    cursor: pointer;
-    align-items: center;
-    justify-content: center;
 }
 </style>
 
